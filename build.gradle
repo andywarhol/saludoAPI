@@ -33,12 +33,9 @@ bootJar {
 
 jar {
     archiveClassifier.set('')
-<<<<<<< HEAD
-}   
-=======
-}  
 
->>>>>>> 0fc7f4ef9af60ca5c7814d69f423368179005514
+}   
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
