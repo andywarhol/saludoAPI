@@ -45,16 +45,16 @@ public class SaludoService {
 		Integer hour = time.getHour();
 	
 		if(hour >= 5 && hour < 12) {
-			var mensaje = this.findOneTipo("manana").getSaludo_mensaje();
+			String mensaje = this.findOneTipo("manana").getSaludo_mensaje();
 			return mensaje;
 		} else if (hour >= 12 && hour < 18) {
-			var mensaje = this.findOneTipo("tarde").getSaludo_mensaje();
+			String mensaje = this.findOneTipo("tarde").getSaludo_mensaje();
 			return mensaje;
 		} else if (hour >= 18 && hour <=24){
-			var mensaje = this.findOneTipo("noche").getSaludo_mensaje();
+			String mensaje = this.findOneTipo("noche").getSaludo_mensaje();
 			return mensaje;
 		} else if (hour >= 1 && hour < 5) {
-			var mensaje = this.findOneTipo("noche").getSaludo_mensaje();
+			String mensaje = this.findOneTipo("noche").getSaludo_mensaje();
 			return mensaje;
 		}
 		return null;
