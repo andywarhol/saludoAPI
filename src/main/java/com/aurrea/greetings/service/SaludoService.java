@@ -35,8 +35,8 @@ public class SaludoService {
 		return saludoRepository.findById(id);
 	}
 	
-	public Saludo findOneTipo(String saludo_tipo){
-		return saludoRepository.getByTipo(saludo_tipo);
+	public Saludo findOneTipo(String tipo){
+		return saludoRepository.getByTipo(tipo);
 	}
 	
 	public String getSaludo() {

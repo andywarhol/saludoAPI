@@ -11,8 +11,8 @@ import com.aurrea.greetings.model.Saludo;
 
 public interface SaludoRepository extends JpaRepository<Saludo, Long>{
 
-	@Query("From Saludo where saludo_tipo=:saludo_tipo")
-	Saludo getByTipo(@Param("saludo_tipo")String saludo_tipo);
+
+	Saludo getByTipo(String tipo);
 	
 	
 

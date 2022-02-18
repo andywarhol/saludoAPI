@@ -24,17 +24,17 @@ public class Saludo {
 	private Long id;
 	
 	@Column(name="saludo_tipo", length=30, unique=true)
-	private String saludo_tipo;
+	private String tipo;
 	@Column(name="saludo_mensaje")
 	private String saludo_mensaje;
 	
 	public Saludo() {
 		
 	}
-	public Saludo(Long id, String saludo_tipo, String saludo_mensaje) {
+	public Saludo(Long id, String tipo, String saludo_mensaje) {
 
 		this.id = id;
-		this.saludo_tipo = saludo_tipo;
+		this.tipo = tipo;
 		this.saludo_mensaje = saludo_mensaje;
 	}
 	
