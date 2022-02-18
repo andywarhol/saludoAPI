@@ -60,7 +60,13 @@ public class SaludoService {
 		return null;
 		
 	}
+	
+	public String getLocalTime() {
 
-
+		LocalTime time = LocalTime.now();
+		
+		Integer hour = time.getHour();
+		return hour.toString();
+	}
 
 }

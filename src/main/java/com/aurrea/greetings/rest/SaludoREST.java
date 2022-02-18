@@ -57,7 +57,10 @@ public class SaludoREST {
 	private ResponseEntity<List<Saludo>> listarSaludos(){
 		return ResponseEntity.ok(saludoService.getAllSaludos());
 	}
-	
+	@GetMapping("/getLocalTime")
+	private String getTime(){
+		return saludoService.getLocalTime();
+	}
 	@GetMapping("/getSaludo")
 	private String getSaludo() {
 		return saludoService.getSaludo();
